@@ -1,0 +1,111 @@
+html,
+body,
+main {
+	height: 100%;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	margin: 0 18%;
+	font-size: 15px;
+	font-family: "Lexend Deca";
+}
+
+span.icon,
+span.title,
+span.text,
+span.learn-more {
+	display: flex;
+}
+
+span.icon,
+span.learn-more {
+	flex: 1;
+}
+
+span.title {
+	flex: 3;
+	align-items: center;
+	font-family: "Big Shoulders Display";
+	min-height: 110px;
+}
+
+span.text {
+	flex: 5;
+	opacity: 0.6;
+	line-height: 25px;
+	min-height: 160px;
+}
+
+div#sedans {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: hsl(31, 77%, 52%);
+}
+
+div#suvs {
+	background-color: hsl(184, 100%, 22%);
+}
+
+div#luxury {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: hsl(179, 100%, 13%);
+}
+
+span.title {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+img.icon {
+	height: 40px;
+	width: 65px;
+}
+
+div.card {
+	padding: 45px 65px 45px 45px;
+	min-height: 50%;
+	flex-direction: column;
+	display: flex;
+}
+
+button.learn-more {
+	background-color: white;
+	border-radius: 30px;
+	border: 0;
+	padding: 10px 30px;
+	width: 150px;
+	font-family: "Lexend Deca";
+	mix-blend-mode: color-dodge;
+	min-height: 40px;
+	cursor: pointer;
+}
+
+button.learn-more:hover {
+	color: white;
+	background-color: transparent;
+	border: 1px solid white;
+}
+
+@media screen and (min-width: 280px) and (max-width: 819px) {
+	main {
+		flex-direction: column;
+		height: auto;
+		margin: 0;
+		padding: 10% 5%;
+	}
+	div#sedans {
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 10px;
+	}
+	div#luxury {
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 10px;
+	}
+}
